@@ -1,1 +1,3 @@
-export const { TOKEN_IPINFO, APP_URL } = process.env
+export const {
+  TOKEN_IPINFO, NEXT_PUBLIC_VERCEL_URL: APP_URL
+} = process.env
