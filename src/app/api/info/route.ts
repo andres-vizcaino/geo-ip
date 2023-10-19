@@ -5,6 +5,8 @@ export async function GET (request: NextRequest) {
   // Get the IP address from the request
   const ip = (request.headers.get('x-real-ip') != null) || request.headers.get('x-forwarded-for')
 
+  console.log('ip', ip)
+
   // if development, use the IP address from the request
   if (process.env.NODE_ENV === 'development') {
     return Response.json({
