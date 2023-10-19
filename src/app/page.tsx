@@ -1,7 +1,7 @@
 import { APP_URL } from '@/config'
 
 const getIpInfo = async () => {
-  const res = await fetch(`${APP_URL}/api/info`, { cache: 'force-cache' })
+  const res = await fetch(`https://${APP_URL}/api/info`, { cache: 'force-cache' })
   const data = await res.json()
   return data
 }
